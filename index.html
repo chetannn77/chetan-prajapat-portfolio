@@ -1,0 +1,911 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Chetan Prajapat — Personal Portfolio</title>
+  <meta name="description"
+    content="Personal portfolio of Chetan Prajapat — Stainless steel fabrication contractor, practical business coordinator, and self-taught digital learner exploring web development, AI tools, and automation." />
+  <meta name="theme-color" content="#070914" />
+  <meta name="author" content="Chetan Prajapat" />
+
+  <!-- Open Graph / Social Sharing Metadata -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Chetan Prajapat — Personal Portfolio" />
+  <meta property="og:description"
+    content="Building My Future, One Skill at a Time. Stainless Steel Fabrication | Project Coordination | Digital Skills | AI & Automation Learning." />
+  <meta property="og:site_name" content="Chetan Prajapat Portfolio" />
+
+  <!-- Inline SVG Favicon (CP Monogram) -->
+  <link rel="icon" type="image/svg+xml"
+    href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23070914'/%3E%3Crect x='2' y='2' width='60' height='60' rx='12' fill='none' stroke='%235CE1F4' stroke-width='2' stroke-opacity='0.6'/%3E%3Ctext x='50%25' y='54%25' dominant-baseline='middle' text-anchor='middle' font-family='sans-serif' font-weight='700' font-size='26' fill='%23F5F7FF'%3ECP%3C/text%3E%3C/svg%3E" />
+
+  <!-- Google Fonts with graceful fallback -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap"
+    rel="stylesheet" />
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <!-- Skip to Content for Keyboard Accessibility -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- Animated Deep Space Starfield Canvas -->
+  <canvas id="starfield" aria-hidden="true"></canvas>
+
+  <!-- Ambient Nebula Gradients -->
+  <div class="nebula-glow nebula-1" aria-hidden="true"></div>
+  <div class="nebula-glow nebula-2" aria-hidden="true"></div>
+  <div class="nebula-glow nebula-3" aria-hidden="true"></div>
+
+  <!-- Navigation Header -->
+  <header class="site-header" id="top">
+    <div class="container nav-container">
+      <a href="#top" class="brand-logo" aria-label="Chetan Prajapat Home">
+        <span class="logo-mark">CP</span>
+        <span class="logo-text">Chetan Prajapat</span>
+      </a>
+
+      <button class="mobile-nav-toggle" id="mobile-nav-toggle" aria-expanded="false" aria-controls="primary-navigation"
+        aria-label="Toggle navigation menu">
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+      </button>
+
+      <nav id="primary-navigation" class="primary-nav" aria-label="Primary Navigation">
+        <ul class="nav-list">
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#journey" class="nav-link">Journey</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#work" class="nav-link">Work</a></li>
+          <li><a href="#digital-learning" class="nav-link">Digital Path</a></li>
+          <li><a href="#vision" class="nav-link">Vision</a></li>
+          <li><a href="#contact" class="nav-link nav-cta">Contact Me</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <!-- SECTION A: HERO -->
+    <section class="hero-section section-padding" id="hero">
+      <div class="container hero-grid">
+        <!-- Hero Left Column: Content -->
+        <div class="hero-content reveal">
+          <div class="identity-badge">
+            <span class="status-dot" aria-hidden="true"></span>
+            <span>Practical Thinker. Self-Taught Learner. Business Builder. Future-Focused Creator.</span>
+          </div>
+
+          <p class="hero-Label">CHETAN PRAJAPAT</p>
+          <h1 class="hero-title">
+            Building My Future, <span class="text-gradient">One Skill at a Time.</span>
+          </h1>
+
+          <p class="hero-domains">
+            Stainless Steel Fabrication <span class="divider">|</span> Project Coordination <span
+              class="divider">|</span> Digital Skills <span class="divider">|</span> AI &amp; Automation Learning
+          </p>
+
+          <p class="hero-intro">
+            I combine hands-on fabrication experience, practical business knowledge, and independent learning. My goal
+            is to keep improving my skills and explore how digital technology can solve real-world problems.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#work" class="btn btn-primary">
+              <span>Explore My Work</span>
+              <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                aria-hidden="true">
+                <path d="M5 12h14M12 5l7 7-7 7" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+            </a>
+            <a href="#contact" class="btn btn-secondary">Contact Me</a>
+          </div>
+
+          <div class="hero-highlights" aria-label="Core Highlights">
+            <div class="highlight-pill">
+              <svg class="highlight-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                aria-hidden="true">
+                <path
+                  d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z" />
+              </svg>
+              <span>Real-World Experience</span>
+            </div>
+            <div class="highlight-pill">
+              <svg class="highlight-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                aria-hidden="true">
+                <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z" />
+                <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z" />
+              </svg>
+              <span>Self-Directed Learning</span>
+            </div>
+            <div class="highlight-pill">
+              <svg class="highlight-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                aria-hidden="true">
+                <circle cx="12" cy="12" r="10" />
+                <polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76" />
+              </svg>
+              <span>Future-Focused Mindset</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hero Right Column: Abstract Futuristic Orbital & Architectural Identity Visual -->
+        <div class="hero-visual-wrapper reveal">
+          <div class="orbital-system" role="img"
+            aria-label="Abstract architectural and orbital representation symbolizing precision metalwork and digital growth">
+            <div class="orbit-ring ring-outer">
+              <span class="orbit-node node-cyan"></span>
+            </div>
+            <div class="orbit-ring ring-middle">
+              <span class="orbit-node node-violet"></span>
+            </div>
+            <div class="orbit-ring ring-inner">
+              <span class="orbit-node node-blue"></span>
+            </div>
+
+            <div class="core-sphere glass-panel">
+              <svg class="core-emblem" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg"
+                aria-hidden="true">
+                <circle cx="60" cy="60" r="46" stroke="url(#gradCyan)" stroke-width="1.5" stroke-dasharray="6 6" />
+                <polygon points="60,18 96,39 96,81 60,102 24,81 24,39" stroke="url(#gradViolet)" stroke-width="2"
+                  fill="rgba(11, 16, 32, 0.7)" />
+                <path d="M46 52L36 60L46 68" stroke="#5CE1F4" stroke-width="2.5" stroke-linecap="round"
+                  stroke-linejoin="round" />
+                <path d="M74 52L84 60L74 68" stroke="#65A8FF" stroke-width="2.5" stroke-linecap="round"
+                  stroke-linejoin="round" />
+                <path d="M64 46L56 74" stroke="#A88BFF" stroke-width="2.5" stroke-linecap="round" />
+                <defs>
+                  <linearGradient id="gradCyan" x1="0" y1="0" x2="120" y2="120" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#5CE1F4" />
+                    <stop offset="1" stop-color="#65A8FF" stop-opacity="0.2" />
+                  </linearGradient>
+                  <linearGradient id="gradViolet" x1="24" y1="18" x2="96" y2="102" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#65A8FF" />
+                    <stop offset="1" stop-color="#A88BFF" />
+                  </linearGradient>
+                </defs>
+              </svg>
+              <div class="core-caption">
+                <span class="core-monogram">CP</span>
+                <span class="core-sub">Craft &amp; Code</span>
+              </div>
+            </div>
+
+            <!-- Floating Spec Badges -->
+            <div class="floating-card card-top-left glass-panel">
+              <span class="spec-label">Foundation</span>
+              <span class="spec-value">Precision Fabrication</span>
+            </div>
+            <div class="floating-card card-bottom-right glass-panel">
+              <span class="spec-label">Direction</span>
+              <span class="spec-value">Digital &amp; AI Systems</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION B: ABOUT ME -->
+    <section class="about-section section-padding" id="about">
+      <div class="container">
+        <div class="section-header reveal">
+          <p class="section-eyebrow">01 / ABOUT ME</p>
+          <h2 class="section-title">Grounded in Real Work. Driven by Curiosity.</h2>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-narrative glass-panel reveal">
+            <p>
+              I come from <strong>Prajapati Nagar village in Bichhawadi</strong> (Sanchore tehsil, Jalore district,
+              Rajasthan, India). After completing my Class 10 education in 2021 at Government Senior Secondary School,
+              Bichhawadi, I focused directly on developing practical, real-world skills to support my family and build a
+              strong professional foundation.
+            </p>
+            <p>
+              Through hands-on dedication on active job sites, I grew into a <strong>stainless steel fabrication
+                contractor</strong>. My work involves building custom railings, main gates, balcony railings, and glass
+              railing installations—alongside taking full responsibility for site measurements, interpreting technical
+              drawings, preparing accurate quotations, and coordinating project delivery. My practical journey also
+              includes working on a project at <strong>Chennai Airport</strong>.
+            </p>
+            <p>
+              Alongside physical site work, I taught myself how to use computers and Microsoft Excel to organize
+              calculations and manage estimates more effectively. That practical need sparked a deeper curiosity in
+              technology—leading me to study foundational <strong>HTML, CSS, and JavaScript</strong>, and explore how
+              web development, AI tools, and automation can modernize everyday business operations.
+            </p>
+          </div>
+
+          <div class="about-facts">
+            <div class="fact-card glass-panel reveal">
+              <div class="fact-icon-wrap">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                  <circle cx="12" cy="10" r="3" />
+                </svg>
+              </div>
+              <div>
+                <h3 class="fact-title">Roots &amp; Origin</h3>
+                <p class="fact-desc">Prajapati Nagar, Bichhawadi, Sanchore, Jalore District, Rajasthan, India.</p>
+              </div>
+            </div>
+
+            <div class="fact-card glass-panel reveal">
+              <div class="fact-icon-wrap">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                  <path d="M22 10v6M2 10l10-5 10 5-10 5z" />
+                  <path d="M6 12v5c3 3 9 3 12 0v-5" />
+                </svg>
+              </div>
+              <div>
+                <h3 class="fact-title">Formal Education</h3>
+                <p class="fact-desc">Class 10 completed in 2021 — Government Senior Secondary School, Bichhawadi,
+                  Rajasthan.</p>
+              </div>
+            </div>
+
+            <div class="fact-card glass-panel reveal">
+              <div class="fact-icon-wrap">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                  <rect x="2" y="7" width="20" height="14" rx="2" ry="2" />
+                  <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16" />
+                </svg>
+              </div>
+              <div>
+                <h3 class="fact-title">Field Experience</h3>
+                <p class="fact-desc">Stainless steel fabrication contractor experienced in residential, commercial, and
+                  airport site work (including a project at Chennai Airport).</p>
+              </div>
+            </div>
+
+            <div class="fact-card glass-panel reveal">
+              <div class="fact-icon-wrap">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                  <polyline points="16 18 22 12 16 6" />
+                  <polyline points="8 6 2 12 8 18" />
+                </svg>
+              </div>
+              <div>
+                <h3 class="fact-title">Independent Growth</h3>
+                <p class="fact-desc">Self-taught in computer operations, Excel calculations, and foundational HTML, CSS,
+                  and JavaScript.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION C: PROFESSIONAL JOURNEY TIMELINE -->
+    <section class="journey-section section-padding" id="journey">
+      <div class="container">
+        <div class="section-header reveal">
+          <p class="section-eyebrow">02 / PROFESSIONAL JOURNEY</p>
+          <h2 class="section-title">Step-by-Step Progression</h2>
+          <p class="section-subtitle">
+            A clear record separating completed field experience from ongoing self-directed learning and future goals.
+          </p>
+        </div>
+
+        <div class="timeline">
+          <!-- Milestone 1 -->
+          <div class="timeline-item reveal">
+            <div class="timeline-marker status-completed" aria-hidden="true"></div>
+            <div class="timeline-content glass-panel">
+              <div class="timeline-meta">
+                <span class="step-number">Milestone 01</span>
+                <span class="status-badge badge-completed">Completed Experience</span>
+              </div>
+              <h3 class="timeline-title">Learning Through Practical Work</h3>
+              <p class="timeline-text">
+                After completing Class 10 in 2021 in Bichhawadi, Rajasthan, I entered the workforce directly. I learned
+                the value of discipline, accurate measurements, tool handling, and teamwork by working hands-on from the
+                ground up.
+              </p>
+            </div>
+          </div>
+
+          <!-- Milestone 2 -->
+          <div class="timeline-item reveal">
+            <div class="timeline-marker status-completed" aria-hidden="true"></div>
+            <div class="timeline-content glass-panel">
+              <div class="timeline-meta">
+                <span class="step-number">Milestone 02</span>
+                <span class="status-badge badge-completed">Completed Experience</span>
+              </div>
+              <h3 class="timeline-title">Developing Stainless Steel Fabrication Skills</h3>
+              <p class="timeline-text">
+                Built practical competence in stainless steel welding, cutting, finishing, and structural assembly
+                across railings, main gates, balcony railings, and glass railing systems, including contributing to
+                project work at Chennai Airport.
+              </p>
+            </div>
+          </div>
+
+          <!-- Milestone 3 -->
+          <div class="timeline-item reveal">
+            <div class="timeline-marker status-completed" aria-hidden="true"></div>
+            <div class="timeline-content glass-panel">
+              <div class="timeline-meta">
+                <span class="step-number">Milestone 03</span>
+                <span class="status-badge badge-completed">Completed &amp; Active Role</span>
+              </div>
+              <h3 class="timeline-title">Taking on Contract Work &amp; Project Responsibilities</h3>
+              <p class="timeline-text">
+                Stepped into responsibilities as a stainless steel fabrication contractor—interpreting technical
+                drawings, taking site measurements, understanding client requirements, preparing quotations, and
+                coordinating installation timelines.
+              </p>
+            </div>
+          </div>
+
+          <!-- Milestone 4 -->
+          <div class="timeline-item reveal">
+            <div class="timeline-marker status-learning" aria-hidden="true"></div>
+            <div class="timeline-content glass-panel">
+              <div class="timeline-meta">
+                <span class="step-number">Milestone 04</span>
+                <span class="status-badge badge-learning">Foundational &amp; Ongoing</span>
+              </div>
+              <h3 class="timeline-title">Learning Computers, Excel, HTML, CSS &amp; JavaScript</h3>
+              <p class="timeline-text">
+                Taught myself everyday computer operations and Microsoft Excel to handle fabrication calculations and
+                quotations accurately, then expanded into learning the fundamentals of web development with HTML, CSS,
+                and JavaScript.
+              </p>
+            </div>
+          </div>
+
+          <!-- Milestone 5 -->
+          <div class="timeline-item reveal">
+            <div class="timeline-marker status-goal" aria-hidden="true"></div>
+            <div class="timeline-content glass-panel">
+              <div class="timeline-meta">
+                <span class="step-number">Milestone 05</span>
+                <span class="status-badge badge-goal">Current Learning &amp; Future Goal</span>
+              </div>
+              <h3 class="timeline-title">Exploring Web Development, AI Tools &amp; Automation</h3>
+              <p class="timeline-text">
+                Currently studying how modern web technologies, AI assistants, and workflow automation can reduce
+                repetitive manual tasks, improve business documentation, and create new professional opportunities.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION D: SKILLS -->
+    <section class="skills-section section-padding" id="skills">
+      <div class="container">
+        <div class="section-header reveal">
+          <p class="section-eyebrow">03 / CAPABILITIES &amp; LEARNING</p>
+          <h2 class="section-title">Skills &amp; Focus Areas</h2>
+          <p class="section-subtitle">
+            Organized honestly by hands-on trade capabilities, practical operations, foundational digital skills, and
+            active learning topics.
+          </p>
+        </div>
+
+        <div class="skills-grid">
+          <!-- Category 1: Fabrication and Site Work -->
+          <article class="skill-card glass-panel reveal">
+            <div class="skill-card-header">
+              <div class="skill-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                  <path
+                    d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z" />
+                </svg>
+              </div>
+              <div>
+                <span class="skill-tier tier-practical">Hands-On Trade</span>
+                <h3 class="skill-card-title">Fabrication &amp; Site Work</h3>
+              </div>
+            </div>
+            <ul class="skill-tag-list">
+              <li class="skill-tag">Stainless Steel Fabrication</li>
+              <li class="skill-tag">Welding</li>
+              <li class="skill-tag">Railings and Gates</li>
+              <li class="skill-tag">Measurements</li>
+              <li class="skill-tag">Technical Drawing Interpretation</li>
+            </ul>
+          </article>
+
+          <!-- Category 2: Business and Operations -->
+          <article class="skill-card glass-panel reveal">
+            <div class="skill-card-header">
+              <div class="skill-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                  <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
+                  <polyline points="14 2 14 8 20 8" />
+                  <line x1="16" y1="13" x2="8" y2="13" />
+                  <line x1="16" y1="17" x2="8" y2="17" />
+                  <polyline points="10 9 9 9 8 9" />
+                </svg>
+              </div>
+              <div>
+                <span class="skill-tier tier-practical">Practical Management</span>
+                <h3 class="skill-card-title">Business &amp; Operations</h3>
+              </div>
+            </div>
+            <ul class="skill-tag-list">
+              <li class="skill-tag">Quotation Preparation</li>
+              <li class="skill-tag">Excel Calculations</li>
+              <li class="skill-tag">Customer Requirement Understanding</li>
+              <li class="skill-tag">Project Coordination</li>
+              <li class="skill-tag">Documentation</li>
+            </ul>
+          </article>
+
+          <!-- Category 3: Digital Skills -->
+          <article class="skill-card glass-panel reveal">
+            <div class="skill-card-header">
+              <div class="skill-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                  <rect x="2" y="3" width="20" height="14" rx="2" ry="2" />
+                  <line x1="8" y1="21" x2="16" y2="21" />
+                  <line x1="12" y1="17" x2="12" y2="21" />
+                </svg>
+              </div>
+              <div>
+                <span class="skill-tier tier-foundational">Practical &amp; Foundational</span>
+                <h3 class="skill-card-title">Digital Skills</h3>
+              </div>
+            </div>
+            <ul class="skill-tag-list">
+              <li class="skill-tag">Computer Skills</li>
+              <li class="skill-tag">Microsoft Excel</li>
+              <li class="skill-tag">HTML <span class="sub-level">(Foundational)</span></li>
+              <li class="skill-tag">CSS <span class="sub-level">(Foundational)</span></li>
+              <li class="skill-tag">JavaScript <span class="sub-level">(Foundational)</span></li>
+            </ul>
+          </article>
+
+          <!-- Category 4: Current Learning Interests -->
+          <article class="skill-card glass-panel reveal">
+            <div class="skill-card-header">
+              <div class="skill-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                  <circle cx="12" cy="12" r="10" />
+                  <path d="M12 16v-4" />
+                  <path d="M12 8h.01" />
+                </svg>
+              </div>
+              <div>
+                <span class="skill-tier tier-exploring">Active Exploration</span>
+                <h3 class="skill-card-title">Current Learning Interests</h3>
+              </div>
+            </div>
+            <ul class="skill-tag-list">
+              <li class="skill-tag">AI Tools</li>
+              <li class="skill-tag">Web Development</li>
+              <li class="skill-tag">Workflow Automation</li>
+              <li class="skill-tag">Digital Business Systems</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION E: WORK CATEGORIES -->
+    <section class="work-section section-padding" id="work">
+      <div class="container">
+        <div class="section-header reveal">
+          <p class="section-eyebrow">04 / WORK CATEGORIES</p>
+          <h2 class="section-title">What I Work On</h2>
+          <p class="section-subtitle">
+            Core areas of my practical fabrication contracting, project coordination, and personal digital
+            skill-building. Technical blueprint visuals are shown below and can be replaced with site photographs at any
+            time.
+          </p>
+        </div>
+
+        <div class="work-grid">
+          <!-- Card 1: Stainless Steel Railings -->
+          <article class="work-card glass-panel reveal">
+            <div class="work-visual">
+              <!-- Replaceable later: <img src="assets/railings-photo.jpg" alt="Stainless steel railing installation by Chetan Prajapat" class="work-photo" /> -->
+              <span class="visual-badge">Illustrative Blueprint</span>
+              <svg class="blueprint-svg" viewBox="0 0 320 160" fill="none" xmlns="http://www.w3.org/2000/svg" role="img"
+                aria-label="Technical blueprint illustration of stainless steel staircase and balcony railings">
+                <line x1="20" y1="135" x2="300" y2="135" stroke="#65A8FF" stroke-width="2" />
+                <line x1="20" y1="45" x2="300" y2="45" stroke="#5CE1F4" stroke-width="3" />
+                <line x1="45" y1="45" x2="45" y2="135" stroke="#F5F7FF" stroke-width="2.5" />
+                <line x1="120" y1="45" x2="120" y2="135" stroke="#F5F7FF" stroke-width="2.5" />
+                <line x1="195" y1="45" x2="195" y2="135" stroke="#F5F7FF" stroke-width="2.5" />
+                <line x1="270" y1="45" x2="270" y2="135" stroke="#F5F7FF" stroke-width="2.5" />
+                <line x1="25" y1="70" x2="295" y2="70" stroke="#A4AECA" stroke-width="1" stroke-dasharray="4 3" />
+                <line x1="25" y1="95" x2="295" y2="95" stroke="#A4AECA" stroke-width="1" stroke-dasharray="4 3" />
+                <line x1="25" y1="120" x2="295" y2="120" stroke="#A4AECA" stroke-width="1" stroke-dasharray="4 3" />
+              </svg>
+            </div>
+            <div class="work-body">
+              <span class="work-category-tag">Fabrication &amp; Installation</span>
+              <h3 class="work-title">Stainless Steel Railings</h3>
+              <p class="work-desc">
+                Custom fabrication and site fitting of durable stainless steel railings for staircases, corridors, and
+                commercial spaces—focused on accurate leveling, clean welds, and smooth finishing.
+              </p>
+            </div>
+          </article>
+
+          <!-- Card 2: Main Gates and Custom Metalwork -->
+          <article class="work-card glass-panel reveal">
+            <div class="work-visual">
+              <span class="visual-badge">Illustrative Blueprint</span>
+              <svg class="blueprint-svg" viewBox="0 0 320 160" fill="none" xmlns="http://www.w3.org/2000/svg" role="img"
+                aria-label="Technical blueprint illustration of a double-leaf stainless steel main gate">
+                <rect x="40" y="25" width="118" height="110" stroke="#5CE1F4" stroke-width="2.5" />
+                <rect x="162" y="25" width="118" height="110" stroke="#5CE1F4" stroke-width="2.5" />
+                <line x1="65" y1="25" x2="65" y2="135" stroke="#65A8FF" stroke-width="1.5" />
+                <line x1="90" y1="25" x2="90" y2="135" stroke="#65A8FF" stroke-width="1.5" />
+                <line x1="115" y1="25" x2="115" y2="135" stroke="#65A8FF" stroke-width="1.5" />
+                <line x1="140" y1="25" x2="140" y2="135" stroke="#65A8FF" stroke-width="1.5" />
+                <line x1="180" y1="25" x2="180" y2="135" stroke="#65A8FF" stroke-width="1.5" />
+                <line x1="205" y1="25" x2="205" y2="135" stroke="#65A8FF" stroke-width="1.5" />
+                <line x1="230" y1="25" x2="230" y2="135" stroke="#65A8FF" stroke-width="1.5" />
+                <line x1="255" y1="25" x2="255" y2="135" stroke="#65A8FF" stroke-width="1.5" />
+                <rect x="148" y="72" width="24" height="16" rx="3" stroke="#A88BFF" stroke-width="2" fill="#0B1020" />
+              </svg>
+            </div>
+            <div class="work-body">
+              <span class="work-category-tag">Structural Metalwork</span>
+              <h3 class="work-title">Main Gates &amp; Custom Metalwork</h3>
+              <p class="work-desc">
+                Measuring, structural framing, and fabricating heavy-duty main gates and custom stainless steel
+                assemblies tailored to customer dimensions and architectural drawings.
+              </p>
+            </div>
+          </article>
+
+          <!-- Card 3: Glass Balcony Railings -->
+          <article class="work-card glass-panel reveal">
+            <div class="work-visual">
+              <span class="visual-badge">Illustrative Blueprint</span>
+              <svg class="blueprint-svg" viewBox="0 0 320 160" fill="none" xmlns="http://www.w3.org/2000/svg" role="img"
+                aria-label="Technical blueprint illustration of glass balcony railing panels with stainless steel posts">
+                <line x1="30" y1="40" x2="290" y2="40" stroke="#F5F7FF" stroke-width="3" />
+                <rect x="48" y="48" width="98" height="78" rx="2" fill="rgba(92, 225, 244, 0.08)" stroke="#5CE1F4"
+                  stroke-width="1.5" />
+                <rect x="174" y="48" width="98" height="78" rx="2" fill="rgba(92, 225, 244, 0.08)" stroke="#5CE1F4"
+                  stroke-width="1.5" />
+                <line x1="38" y1="40" x2="38" y2="136" stroke="#A88BFF" stroke-width="3" />
+                <line x1="160" y1="40" x2="160" y2="136" stroke="#A88BFF" stroke-width="3" />
+                <line x1="282" y1="40" x2="282" y2="136" stroke="#A88BFF" stroke-width="3" />
+                <line x1="65" y1="105" x2="105" y2="65" stroke="#5CE1F4" stroke-width="1" stroke-opacity="0.6" />
+                <line x1="195" y1="105" x2="235" y2="65" stroke="#5CE1F4" stroke-width="1" stroke-opacity="0.6" />
+              </svg>
+            </div>
+            <div class="work-body">
+              <span class="work-category-tag">Modern Architectural Systems</span>
+              <h3 class="work-title">Glass Balcony Railings</h3>
+              <p class="work-desc">
+                Precision alignment of stainless steel posts, brackets, and handrails designed to hold toughened glass
+                balcony panels safely and cleanly.
+              </p>
+            </div>
+          </article>
+
+          <!-- Card 4: Quotations and Project Coordination -->
+          <article class="work-card glass-panel reveal">
+            <div class="work-visual">
+              <span class="visual-badge">Illustrative Schematic</span>
+              <svg class="blueprint-svg" viewBox="0 0 320 160" fill="none" xmlns="http://www.w3.org/2000/svg" role="img"
+                aria-label="Schematic illustration representing measurement tables, quotations, and project coordination">
+                <rect x="55" y="25" width="210" height="110" rx="6" stroke="#65A8FF" stroke-width="2" />
+                <line x1="55" y1="52" x2="265" y2="52" stroke="#65A8FF" stroke-width="1.5" />
+                <line x1="125" y1="52" x2="125" y2="135" stroke="#65A8FF" stroke-width="1" />
+                <line x1="200" y1="52" x2="200" y2="135" stroke="#65A8FF" stroke-width="1" />
+                <rect x="70" y="65" width="40" height="8" rx="2" fill="#5CE1F4" fill-opacity="0.5" />
+                <rect x="140" y="65" width="45" height="8" rx="2" fill="#A4AECA" fill-opacity="0.4" />
+                <rect x="212" y="65" width="38" height="8" rx="2" fill="#A88BFF" fill-opacity="0.6" />
+                <rect x="70" y="88" width="40" height="8" rx="2" fill="#5CE1F4" fill-opacity="0.5" />
+                <rect x="140" y="88" width="45" height="8" rx="2" fill="#A4AECA" fill-opacity="0.4" />
+                <rect x="212" y="88" width="38" height="8" rx="2" fill="#A88BFF" fill-opacity="0.6" />
+                <rect x="70" y="111" width="40" height="8" rx="2" fill="#5CE1F4" fill-opacity="0.5" />
+                <rect x="212" y="111" width="38" height="8" rx="2" fill="#5CE1F4" fill-opacity="0.9" />
+              </svg>
+            </div>
+            <div class="work-body">
+              <span class="work-category-tag">Estimating &amp; Planning</span>
+              <h3 class="work-title">Quotations &amp; Project Coordination</h3>
+              <p class="work-desc">
+                Translating on-site measurements and technical drawings into structured material calculations, Excel
+                cost estimates, customer quotations, and practical site execution schedules.
+              </p>
+            </div>
+          </article>
+
+          <!-- Card 5: Digital Skills and Learning Projects -->
+          <article class="work-card glass-panel reveal">
+            <div class="work-visual">
+              <span class="visual-badge">Illustrative Schematic</span>
+              <svg class="blueprint-svg" viewBox="0 0 320 160" fill="none" xmlns="http://www.w3.org/2000/svg" role="img"
+                aria-label="Schematic illustration of HTML, CSS, JavaScript code and digital workflow nodes">
+                <rect x="45" y="25" width="140" height="105" rx="6" stroke="#5CE1F4" stroke-width="2" />
+                <circle cx="60" cy="38" r="3" fill="#A88BFF" />
+                <circle cx="72" cy="38" r="3" fill="#65A8FF" />
+                <circle cx="84" cy="38" r="3" fill="#5CE1F4" />
+                <path d="M68 68L56 78L68 88" stroke="#5CE1F4" stroke-width="2" stroke-linecap="round"
+                  stroke-linejoin="round" />
+                <path d="M104 68L116 78L104 88" stroke="#5CE1F4" stroke-width="2" stroke-linecap="round"
+                  stroke-linejoin="round" />
+                <line x1="92" y1="64" x2="80" y2="92" stroke="#A88BFF" stroke-width="2" stroke-linecap="round" />
+                <line x1="185" y1="78" x2="225" y2="78" stroke="#65A8FF" stroke-width="2" stroke-dasharray="4 4" />
+                <circle cx="250" cy="78" r="24" stroke="#A88BFF" stroke-width="2" />
+                <circle cx="250" cy="78" r="8" fill="#5CE1F4" />
+              </svg>
+            </div>
+            <div class="work-body">
+              <span class="work-category-tag">Self-Taught Tech</span>
+              <h3 class="work-title">Digital Skills &amp; Learning Projects</h3>
+              <p class="work-desc">
+                Building spreadsheets for business calculations, practicing foundational HTML, CSS, and JavaScript, and
+                learning how digital tools and AI can streamline everyday workflows.
+              </p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION F: MY DIGITAL LEARNING -->
+    <section class="digital-section section-padding" id="digital-learning">
+      <div class="container">
+        <div class="section-header reveal">
+          <p class="section-eyebrow">05 / MY DIGITAL LEARNING</p>
+          <h2 class="section-title">From Site Measurements to Digital Tools</h2>
+        </div>
+
+        <div class="digital-grid">
+          <div class="digital-story glass-panel reveal">
+            <h3 class="digital-heading">How Practical Work Sparked My Tech Journey</h3>
+            <p>
+              My introduction to technology did not begin in a computer science classroom—it began with the practical
+              need to manage measurements, material lists, and customer quotations accurately. Starting on my own, I
+              learned how to operate a computer and use <strong>Microsoft Excel</strong> to organize numbers, reduce
+              manual calculation mistakes, and prepare clearer documentation.
+            </p>
+            <p>
+              Seeing how much time a well-structured spreadsheet could save made me curious about how websites and
+              software work under the hood. I began learning the building blocks of the web—<strong>HTML5, CSS3, and
+                foundational JavaScript</strong>—step by step through self-study.
+            </p>
+            <p>
+              Today, I am actively exploring how <strong>web development, AI tools, and workflow automation</strong> can
+              help contractors, small businesses, and everyday professionals reduce repetitive work, keep records
+              organized, and communicate more clearly.
+            </p>
+          </div>
+
+          <div class="digital-pillars">
+            <div class="pillar-card glass-panel reveal">
+              <span class="pillar-index">01</span>
+              <div>
+                <h4 class="pillar-title">Spreadsheets &amp; Calculation Logic</h4>
+                <p class="pillar-text">Using Microsoft Excel for practical rate analysis, square-foot/running-foot
+                  measurements, and clean quotation preparation.</p>
+              </div>
+            </div>
+
+            <div class="pillar-card glass-panel reveal">
+              <span class="pillar-index">02</span>
+              <div>
+                <h4 class="pillar-title">Web Development Foundations</h4>
+                <p class="pillar-text">Understanding page structure with HTML, responsive layouts with CSS, and
+                  interactive behavior with introductory JavaScript.</p>
+              </div>
+            </div>
+
+            <div class="pillar-card glass-panel reveal">
+              <span class="pillar-index">03</span>
+              <div>
+                <h4 class="pillar-title">Process &amp; AI Exploration</h4>
+                <p class="pillar-text">Learning how modern AI tools and simple digital systems can assist with drafting,
+                  organizing information, and saving time on routine tasks.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION G: FUTURE VISION -->
+    <section class="vision-section section-padding" id="vision">
+      <div class="container">
+        <div class="vision-banner glass-panel reveal">
+          <div class="section-header">
+            <p class="section-eyebrow">06 / FUTURE VISION</p>
+            <h2 class="section-title">Practical Experience. Digital Thinking. Continuous Growth.</h2>
+            <p class="section-subtitle">
+              My ambition is to bridge hands-on contracting experience with modern web development, AI tools, and
+              practical business automation—growing steadily through disciplined learning and real application.
+            </p>
+          </div>
+
+          <!-- Visual Roadmap: Learn -> Apply -> Build -> Improve -->
+          <div class="roadmap-grid" aria-label="Four-stage learning and growth roadmap">
+            <div class="roadmap-step">
+              <div class="roadmap-top">
+                <span class="roadmap-num">Stage 01</span>
+                <span class="roadmap-status">Ongoing Habit</span>
+              </div>
+              <h3 class="roadmap-title">Learn</h3>
+              <p class="roadmap-desc">
+                Strengthen foundational skills in web development (HTML, CSS, JavaScript), digital documentation, and
+                practical AI tools.
+              </p>
+            </div>
+
+            <div class="roadmap-arrow" aria-hidden="true">→</div>
+
+            <div class="roadmap-step">
+              <div class="roadmap-top">
+                <span class="roadmap-num">Stage 02</span>
+                <span class="roadmap-status">Active Practice</span>
+              </div>
+              <h3 class="roadmap-title">Apply</h3>
+              <p class="roadmap-desc">
+                Use spreadsheets, digital templates, and web tools to improve real quotation preparation, calculations,
+                and project coordination.
+              </p>
+            </div>
+
+            <div class="roadmap-arrow" aria-hidden="true">→</div>
+
+            <div class="roadmap-step">
+              <div class="roadmap-top">
+                <span class="roadmap-num">Stage 03</span>
+                <span class="roadmap-status status-future-goal">Future Goal</span>
+              </div>
+              <h3 class="roadmap-title">Build</h3>
+              <p class="roadmap-desc">
+                Goal: Create useful websites, custom quotation calculators, and simple digital workflows tailored for
+                real-world trades and businesses.
+              </p>
+            </div>
+
+            <div class="roadmap-arrow" aria-hidden="true">→</div>
+
+            <div class="roadmap-step">
+              <div class="roadmap-top">
+                <span class="roadmap-num">Stage 04</span>
+                <span class="roadmap-status status-future-goal">Long-Term Goal</span>
+              </div>
+              <h3 class="roadmap-title">Improve</h3>
+              <p class="roadmap-desc">
+                Goal: Continuously refine both my technical capabilities and business systems to deliver higher value
+                and take on larger opportunities.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION H: CONTACT -->
+    <section class="contact-section section-padding" id="contact">
+      <div class="container">
+        <div class="contact-box glass-panel reveal">
+          <div class="contact-header">
+            <p class="section-eyebrow">07 / GET IN TOUCH</p>
+            <h2 class="section-title">Good Work Begins With a Conversation.</h2>
+            <p class="contact-lead">
+              Whether you want to discuss a stainless steel fabrication project, site coordination, or connect regarding
+              digital learning and collaboration, feel free to reach out directly.
+            </p>
+          </div>
+
+          <div class="contact-cards-grid">
+            <!-- Direct Email Link (Placeholder ready to edit) -->
+            <a href="mailto:chetanram565@gmail.com?subject=Inquiry%20from%20Portfolio%20Website"
+              class="contact-card glass-panel">
+              <div class="contact-card-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                  <polyline points="22,6 12,13 2,6" />
+                </svg>
+              </div>
+              <div class="contact-card-info">
+                <span class="contact-label">Email Me</span>
+                <span class="contact-value">chetanram565@gmail.com</span>
+                <span class="contact-action">Send an Email →</span>
+              </div>
+            </a>
+
+            <!-- Direct WhatsApp Link (Placeholder ready to edit) -->
+            <a href="https://wa.me/919427440512?text=Hello%20Chetan%2C%20I%20visited%20your%20portfolio%20website%20and%20would%20like%20to%20connect."
+              target="_blank" rel="noopener noreferrer" class="contact-card glass-panel">
+              <div class="contact-card-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                  <path
+                    d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z" />
+                </svg>
+              </div>
+              <div class="contact-card-info">
+                <span class="contact-label">WhatsApp</span>
+                <span class="contact-value">+91 9427440512 </span>
+                <span class="contact-action">Chat on WhatsApp →</span>
+              </div>
+            </a>
+
+            <!-- LinkedIn Profile Link -->
+            <a href="https://www.linkedin.com/in/chetan-prajapat-a6964b33b/" target="_blank" rel="noopener noreferrer"
+              class="contact-card glass-panel">
+              <div class="contact-card-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                  <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
+                  <rect x="2" y="9" width="4" height="12" />
+                  <circle cx="4" cy="4" r="2" />
+                </svg>
+              </div>
+              <div class="contact-card-info">
+                <span class="contact-label">LinkedIn</span>
+                <span class="contact-value">chetan-prajapat-a6964b33b</span>
+                <span class="contact-action">Connect on LinkedIn →</span>
+              </div>
+            </a>
+
+            <!-- GitHub Profile Link -->
+            <a href="https://github.com/chetannn77" target="_blank" rel="noopener noreferrer"
+              class="contact-card glass-panel">
+              <div class="contact-card-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                  <path
+                    d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" />
+                </svg>
+              </div>
+              <div class="contact-card-info">
+                <span class="contact-label">GitHub</span>
+                <span class="contact-value">github.com/chetannn77</span>
+                <span class="contact-action">View GitHub Profile →</span>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- SECTION I: FOOTER -->
+  <footer class="site-footer">
+    <div class="container footer-container">
+      <div class="footer-identity">
+        <a href="#top" class="brand-logo">
+          <span class="logo-mark">CP</span>
+          <span class="logo-text">Chetan Prajapat</span>
+        </a>
+        <p class="footer-tagline">
+          Practical Thinker. Self-Taught Learner. Business Builder. Future-Focused Creator.
+        </p>
+      </div>
+
+      <div class="footer-meta">
+        <p class="copyright">
+          &copy; <span id="current-year">2026</span> Chetan Prajapat. All rights reserved.
+        </p>
+        <a href="#top" class="back-to-top" aria-label="Back to top of page">
+          <span>Back to Top</span>
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"
+            aria-hidden="true">
+            <path d="M18 15l-6-6-6 6" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Main JavaScript -->
+  <script src="script.js"></script>
+</body>
+
+</html>
