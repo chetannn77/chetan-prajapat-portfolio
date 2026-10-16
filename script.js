@@ -2,10 +2,11 @@
  * CHETAN PRAJAPAT — PERSONAL PORTFOLIO SCRIPT
  * Features:
  * 1. Dynamic copyright year
- * 2. Accessible mobile navigation menu toggle
- * 3. Scroll-triggered section reveal animations (IntersectionObserver)
- * 4. Active navigation link highlighting on scroll
- * 5. Deep-space animated starfield canvas with reduced-motion support
+ * 2. Profile photo load & automatic fallback handler
+ * 3. Accessible mobile navigation menu toggle
+ * 4. Scroll-triggered section reveal animations (IntersectionObserver)
+ * 5. Active navigation link highlighting on scroll
+ * 6. Deep-space animated starfield canvas with reduced-motion support
  */
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -20,7 +21,43 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   /* --------------------------------------------------------------------------
-     2. MOBILE NAVIGATION MENU
+     2. PROFILE PHOTO LOAD & GRACEFUL FALLBACK
+     -------------------------------------------------------------------------- */
+  const profileImg = document.getElementById('profile-photo');
+  const profileFallback = document.getElementById('profile-fallback');
+
+  if (profileImg && profileFallback) {
+    const showFallback = () => {
+      profileImg.classList.add('is-hidden');
+      profileFallback.classList.add('is-active');
+    };
+
+    const showPhoto = () => {
+      profileImg.classList.remove('is-hidden');
+      profileFallback.classList.remove('is-active');
+    };
+
+    profileImg.addEventListener('error', showFallback);
+    profileImg.addEventListener('load', () => {
+      if (profileImg.naturalWidth > 0) {
+        showPhoto();
+      } else {
+        showFallback();
+      }
+    });
+
+    // Handle case where browser already evaluated the image before script ran
+    if (profileImg.complete) {
+      if (profileImg.naturalWidth === 0) {
+        showFallback();
+      } else {
+        showPhoto();
+      }
+    }
+  }
+
+  /* --------------------------------------------------------------------------
+     3. MOBILE NAVIGATION MENU
      -------------------------------------------------------------------------- */
   const navToggle = document.getElementById('mobile-nav-toggle');
   const primaryNav = document.getElementById('primary-navigation');
@@ -53,7 +90,7 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   /* --------------------------------------------------------------------------
-     3. SCROLL-TRIGGERED SECTION REVEALS
+     4. SCROLL-TRIGGERED SECTION REVEALS
      -------------------------------------------------------------------------- */
   const revealElements = document.querySelectorAll('.reveal');
 
@@ -80,7 +117,7 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   /* --------------------------------------------------------------------------
-     4. ACTIVE NAVIGATION HIGHLIGHT ON SCROLL
+     5. ACTIVE NAVIGATION HIGHLIGHT ON SCROLL
      -------------------------------------------------------------------------- */
   const sections = document.querySelectorAll('main section[id]');
 
@@ -107,7 +144,7 @@ document.addEventListener('DOMContentLoaded', () => {
   highlightActiveNav();
 
   /* --------------------------------------------------------------------------
-     5. DEEP SPACE STARFIELD CANVAS
+     6. DEEP SPACE STARFIELD CANVAS
      -------------------------------------------------------------------------- */
   const canvas = document.getElementById('starfield');
   if (!canvas) return;
