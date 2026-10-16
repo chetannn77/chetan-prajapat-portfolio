@@ -15,6 +15,7 @@ The website is built with pure **HTML5**, **CSS3**, and **Vanilla JavaScript** w
 chetan-prajapat-portfolio/
 ├── index.html      # Main website structure and content
 ├── style.css       # Galaxy UI design system, layout, and animations
-├── script.js       # Starfield canvas, mobile menu, and scroll interactions
+├── script.js       # Starfield canvas, photo fallback, mobile menu, and scroll logic
 ├── README.md       # Documentation and deployment guide
-└── assets/         # (Optional) Create this folder to store your own project photos
+└── assets/
+    └── profile.jpg # Your portrait photo displayed inside the Hero orbital ring
